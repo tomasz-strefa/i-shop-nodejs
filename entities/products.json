@@ -1,0 +1,65 @@
+[
+    {
+        "productId": 1,
+        "title": "Przejazd Porsche 911",
+        "description": "Dostęp do 21 torów w całej Polsce.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_1.png",
+        "price": 12000
+    },
+    {
+        "productId": 2,
+        "title": "Skok ze spadochronem",
+        "description": "Wykonaj niesamowity skok z samolotu - dostępnych jest 26 lokalizacji!",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_2.png",
+        "price": 4500
+    },
+    {
+        "productId": 3,
+        "title": "Jazda OFF ROAD 4x4",
+        "description": "Poczuj moc napędu 4x4 w najtrudniejszych warunkach.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_3.png",
+        "price": 1000
+    },
+    {
+        "productId": 4,
+        "title": "Skok na bungee",
+        "description": "Zawsze chciałeś spróbować skoku na bungee? Teraz masz okazje. Dostępnych jest 18 lokalizacji.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_4.png",
+        "price": 7400
+    },
+    {
+        "productId": 5,
+        "title": "Masaż dla dwojga",
+        "description": "Zabierz bliską Ci osobą na relaksujące chwile.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_5.png",
+        "price": 8500
+    },
+    {
+        "productId": 6,
+        "title": "Paintball",
+        "description": "Adrenalina, emocje i walka - spróbuj swoich sił na arenie paintball!",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_6.png",
+        "price": 1100
+    },
+    {
+        "productId": 7,
+        "title": "Wstęp do parku rozrywki",
+        "description": "Przeżyj niesamowite chwile w rodzinnym parku rozrywki.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_7.png",
+        "price": 5000
+    },
+    {
+        "productId": 8,
+        "title": "Lot balonem",
+        "description": "Przeżyj niesamowity przelot balonem i podziwiaj widoki.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_8.png",
+        "price": 5500
+    },
+    {
+        "productId": 9,
+        "title": "Kurs wspinaczki górskiej",
+        "description": "Naucz się profesjonalnej wspinaczki górskiej.",
+        "image": "http://dev-livecode.codenga.pl/portfolio-img/product_9.png",
+        "price": 7000
+    }
+]
