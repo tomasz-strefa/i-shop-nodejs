@@ -18,7 +18,9 @@ app.get('/api/i-shop/products', function (req, res) {
 
 app.post('/api/i-shop/order', function (req, res) {
     const result = checkRequest(req.body);
-    res.sendStatus(result ? 200 : 400);
+    console.log('STATUS === ', result);
+    res.writeHead(result ? 200 : 400);
+    res.end();
 })
 
 var server = app.listen(8081, function () {
@@ -28,14 +30,40 @@ var server = app.listen(8081, function () {
 })
 
 function checkRequest(body) {
-    console.log('body -> ', body);
-    result = false
+    resultValid = false;
+
     body.products.forEach(el => {
-        console.log('el price = ' + el.price + ' body price: ' + body.price);
-        if(el.price == body.price) {
-            result = true;
+
+        if(_isValidProduct(el)) {
+            resultValid = true;
         }
     });
 
-    return result;
+    checkSize = false;
+    counterProducts = 0;
+    body.products.forEach(el => {
+        counterProducts += el.counter;
+    });
+
+    if(counterProducts === body.productsCounter) {
+        checkSize = true;
+    }
+
+    checkPrice = false;
+    sumPrice = 0.0;
+    body.products.forEach(el => {
+        sumPrice += (el.price * el.counter);
+    });
+
+    if(sumPrice === body.productsPrice) {
+        checkPrice = true;
+    }
+
+    return resultValid && checkSize && checkPrice;
+}
+
+function _isValidProduct(productDTO) {
+    var product = productsRepository.findOne(productDTO.productId);
+    
+    return product.price === productDTO.price;
 }
