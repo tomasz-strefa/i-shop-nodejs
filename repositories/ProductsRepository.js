@@ -1,12 +1,11 @@
 var fs = require("fs");
-const e = require("express");
 
 class ProductsRepository {
 
     products = [];
 
     constructor(baseDir) {
-        this.products = fs.readFileSync( baseDir + "/entities/" + "products.json", 'utf8');
+        this.products = fs.readFileSync(baseDir + "/entities/" + "products.json", 'utf8');
     }
 
     getProducts() {
